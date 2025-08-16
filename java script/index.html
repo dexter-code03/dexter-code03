@@ -1,0 +1,15 @@
+<html><body> <script> 
+    function validate() { 
+    var msg; 
+    if(document.myForm.userPass.value.length>5){ 
+    msg="Strong Password"; } 
+    else{ 
+    msg="Weak Password"; } 
+    document.getElementById('mylocation').innerText=msg; 
+    } 
+    </script> 
+    <form name="myForm"> 
+    <input type="password" value="" name="userPass" 
+    onkeyup="validate()"> 
+    Strength:<span id="mylocation">No Input</span> 
+    </form> </body> </html
