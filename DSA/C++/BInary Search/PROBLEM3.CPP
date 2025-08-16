@@ -10,14 +10,35 @@ int First(int a[],int n,int x)
         mid=(low+high)/2;
         if(a[mid]==x)
         {
-           if(a[mid+1]!=x||mid==n-1)
+          if(a[low]==x)
+          {
+            if(a[low-1]!=x||low==0)
             {
-                return mid;
+                if(a[high==x])
+                {
+                    if(a[high+1]!=x||high==n-1)
+                    {
+                        return high-low+1;
+                    }
+                    else
+                    {
+                        high++;
+                    }
+                }
+                else
+                {
+                    high--;
+                }
             }
             else
             {
-                low=mid+1;
+                low--;
             }
+          }
+          else
+          {
+            low++;
+          }
         }
         else if(a[mid]>x)
         {
@@ -35,4 +56,4 @@ int main()
     int arr[]={10,20,30,30,30,40,50,60,70,70,70,70};
     int n=sizeof(arr)/sizeof(arr[0]);
     cout<<First(arr,n,30);
-}
+}   
