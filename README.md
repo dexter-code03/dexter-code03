@@ -73,6 +73,8 @@ A production-ready streaming platform with real RTMP ingest, Stripe subscription
 
 > *From product idea to structured PRD in one click. Multi-provider AI with live model auto-detection.*
 
+**Live Demo:** [https://pm-ai-tool-nah6.onrender.com](https://pm-ai-tool-nah6.onrender.com) (Default login: `demo@pm-ai-tool.local` / `demo12345`)
+
 A product management platform where AI writes and maintains your PRDs.
 
 **Features:**
